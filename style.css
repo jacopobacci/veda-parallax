@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  position: absolute;
+}
+
+.plants-frame {
+  z-index: 12;
+  width: 120%;
+}
+.tropical-plants {
+  z-index: 11;
+  width: 50%;
+}
+.lakshmi {
+  z-index: 10;
+  width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+  .plants-frame {
+    width: 120%;
+    height: 120%;
+  }
+  .tropical-plants {
+    width: 90%;
+  }
+  .lakshmi {
+    width: 60%;
+  }
+}
